@@ -1,0 +1,440 @@
+@media(prefers-reduced-motion: no-preference){
+    *{
+      scroll-behavior: smooth;
+    }
+  }
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{ 
+    margin: 0;
+    background: #1b1b32;
+    background-size: cover;
+}
+header{
+    width: 100vw;
+    height: calc(16% - 50px);
+    background-color: #000000e5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    border-bottom: 1px double purple;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: 1rem;
+    align-items: center;
+}
+
+.user-icon li{
+    padding: .5rem 1rem;
+    clip-path: circle(45%);
+}
+.user-icon i{
+    color: silver;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+}
+nav ul{
+    list-style: none;
+    padding: 0 ;
+    display: flex;
+    align-items: end;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav-tabs li{
+    background-color: #8080802d;
+    padding: 0 8px;
+    margin-right: 10px;
+    font-size: clamp(1rem, 6vw, 3rem);
+    clip-path: ellipse(50% 80%);
+}  
+nav li:last-of-type{
+    margin-right: 5px;
+}
+.nav-tabs li:first-of-type{
+    padding-inline-start: 1px;
+}
+.nav-tabs li:hover{
+    background-color: #8080809f; 
+}
+.user-icon li:hover{
+    background-color: purple;
+}
+.b_slate{
+    position: fixed;
+    width: 20rem;
+    height: 15rem;
+    background-color: orange;
+    z-index: -2;
+    transform: translate(40%, 90%) rotate(-40deg) skew(30deg, 30deg);
+    display: grid;
+    place-content: end;
+}
+.b_slate .line{
+    height: 15rem;
+    width: 1rem;
+    background-color: red;
+    rotate: 90deg;
+    border-top: 10px solid white;
+    border-radius: 50% 50%;
+}
+.b_slate p{
+    position: absolute;
+    top: -5%;
+    left: 20%;
+    font-size: 3em;
+}
+.b_elevation{
+    width: 50em;
+    height: 100em;
+    border-radius: 50%;
+    background-color: purple;
+    position: fixed;
+    z-index: -1;
+    transform: translate(10em, 25em) scale(1.5, 0.8) skew(30deg, -20deg);
+}
+.profile-img img{
+    max-width: 16rem;
+    width: 60vw;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    margin-top: 9.5rem;
+    border: 5px solid silver;
+}
+.profile-img img:hover{
+    border-color: #c0c0c07f;
+    transition: .9s;
+}
+.profile-img{
+    display: grid;
+    place-items: center;
+    
+}
+.profile-region *{
+    margin-bottom: 1.5rem;
+}
+#welcome-section{
+    text-align: center;
+    height: 100vh;
+    padding-top: 5.5rem;
+}
+.wel-sect div:first-of-type{
+    margin-right:2em;
+}
+.heading-text h1{
+    font-size: clamp(1rem, 7vw, 6rem);
+    color: silver;
+}
+.heading-text p{
+    font-size: clamp(1.3rem, 4vw, 2rem);
+    color: rosybrown;
+}
+main{
+    background-color: #000000bf;
+    padding-inline-start: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.name{
+    font-size: clamp(1rem, 5.5vw, 2rem);
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+}
+.btn-wrap{
+    display: flex;
+    flex-flow: wrap-reverse;
+    justify-content: center;
+}
+.btn-wrap a {
+    text-decoration: none;
+    background-color: silver;
+    clip-path: ellipse(50% 80%);
+    font-family: Arial, sans-serif;
+    padding: 0.005rem 0;
+    margin: 0.5em 2.5rem;
+}
+.btn-wrap p{
+    color: black;
+    padding: 3px 0; 
+    margin: .4rem 1.9rem;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+.btn-wrap a:hover{
+    background-color: ghostwhite;
+    transform: scale(102%);
+    transition: .1s;
+}
+ 
+p.location a{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: linen;
+    text-decoration: none;
+}
+p.location a:hover{
+    border-bottom: .5px solid linen;
+}
+p.location i{
+    color: orangered;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+.social_icons{
+    display: grid;
+    place-items: end;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    padding-inline-end: .3rem;
+    position: fixed;
+    top: 75%;
+    right: 0;
+    width: min-content;
+}
+.social_icons a{
+    text-decoration: none;
+    width: 1.5em;
+    height: 1.5em;
+    padding-top: 6px;
+    border-radius: 30% 0; 
+}
+.social_icons i{
+    color: linen;
+}
+.social_icons a:hover{
+    transform: scale(130%);
+    transition: .4s;
+}
+
+/* About Me */ 
+section#about_me {
+    padding-top: 7rem;
+}
+.me{
+    color: linen;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #0000007f;
+    width: 90%;
+    margin: 0 auto;
+}
+section div.me span{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.me p{
+    line-height: 2;
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+}
+/* Projects section */
+.p_contain{
+    padding-top: 5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.p_contain h2{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:start;
+    color: linen;
+}
+.tile-wrap .project-tile{
+    margin-bottom: .9em;
+    text-align: center; 
+}
+.tile-wrap img{
+    max-width: 80%;
+}
+.tile-wrap{
+   padding-top: 5.5em;
+}
+.tile-wrap span{
+    color: #fff;
+    font-size: 2em;
+}
+.tile-wrap img:hover{
+    transform: scale(120%);
+    transition: .2s;
+}
+.III {
+    display: grid;
+    place-items: center;
+}
+/* Contact section*/
+#contact{
+    color: #fff;
+    padding-top: 6rem;
+    height: 100vh;
+}
+
+legend{
+    font-size: clamp(1rem, 5vw, 2.5rem);
+    font-family: Raleway;
+    position: relative;
+    top: 3%;
+}
+legend span{
+    background-color: crimson;
+}
+fieldset{
+    margin: 0 auto;
+    height: 85vh;
+    box-shadow: 1px 5px 30px 3px magenta;
+    border-top: none;
+    width: 60vw;
+}
+.contact-box{
+    display: grid;
+    place-items: start;
+    gap: 6rem;
+    padding-top: 8rem;
+}
+.contact-box input{
+    font-size: clamp(1rem, 5vw, 2rem);
+    height: 4rem;
+    border-radius: 1% 25% 1% 25% ;
+    border-color: rosybrown;
+}
+.contact-box textarea{
+    font-size: clamp(1rem, 5vw, 2rem);
+    height: 10rem;
+    background-color:gainsboro;
+    width: 80%;
+}
+.social-icons{
+    font-size: 10rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row-reverse wrap;
+}
+.sub-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5em;
+}
+.sub-btn input{
+    font-size: clamp(1rem, 5vw, 2em);
+    height: 9vh;
+    background-color: crimson;
+    color: ghostwhite;
+    border: .5px solid linen;
+}
+.sub-btn input:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1px 3px linen;
+    transform: scale(105%);
+    transition: .2s;
+}
+
+.meg{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap:  1rem; 
+}
+.meg a{
+    text-decoration: none;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+.meg a:hover{
+    box-shadow: 0 0 5px 5px transparent;
+    transform: scale(170%);
+    transition: .2s;
+}
+.meg i{
+    color: #fff;
+}
+
+
+footer{
+    font-size: 1em;
+    color: gray;
+    padding-bottom: 1rem;
+}
+
+/* Media queries */
+@media (min-width: 500px){
+    .tile-wrap{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(1rem, 40rem));
+        grid-auto-rows: minmax(100px, auto);
+        place-content: center;
+    } 
+    .III{
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+    .II{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .I{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .I img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .II img{
+        height: 20rem;
+    }
+    .tile-wrap{
+        padding-top: 4em;
+    }
+    #welcome-section{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .second *{
+        position: absolute;
+        width: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+    
+    .heading-text, .profile-region{
+        margin-top: -16rem;
+    }
+    .social_icons{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 9rem;
+    }
+    .social_icons a{
+        margin: 0 .5rem;
+    }
+}
+@media (max-width: 499px){
+    .first *{
+        position: absolute;
+        width: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+    .p_contain h2{
+        margin-bottom: -5rem;
+    }
+}
