@@ -6,3 +6,11 @@ body{
     background: #FFF;
     background-size: cover;
 }
+.headline{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+}
+.logo .passport-image{
+    background-color: #000;
+}
